@@ -1,7 +1,7 @@
 # Spotify Music Tracks Data Analysis
 
 ## Overview
-This project aims to analyze a dataset of Spotify music tracks to uncover trends, patterns, and insights related to track popularity, genre distribution, and various musical attributes. The analysis involves data cleaning, exploration, visualization, and statistical analysis.
+This project aims to analyze a dataset of Spotify music tracks to uncover trends, patterns, and insights related to track popularity, genre distribution, and various musical attributes. The analysis involves data cleaning, exploration, visualization, and statistical analysis to provide comprehensive insights into the music industry.
 
 ## Project Goals
 - **Popularity Analysis**: Investigate the popularity of tracks over time and identify the top genres based on popularity.
@@ -10,26 +10,26 @@ This project aims to analyze a dataset of Spotify music tracks to uncover trends
 
 ## Dataset
 The dataset used in this project includes the following columns:
-- `id`: Unique identifier for the track
-- `name`: Name of the track
-- `popularity`: Popularity score of the track
-- `duration_ms`: Duration of the track in milliseconds
-- `explicit`: Indicates if the track contains explicit content
-- `artists`: List of artists for the track
-- `id_artists`: Unique identifiers for the artists
-- `release_date`: Release date of the track
-- `danceability`: Measure of how suitable a track is for dancing
-- `energy`: Measure of intensity and activity
-- `key`: Key in which the track is composed
-- `loudness`: Overall loudness of the track
-- `mode`: Modality of the track (major or minor)
-- `speechiness`: Presence of spoken words in the track
-- `acousticness`: Measure of the acoustic quality of the track
-- `instrumentalness`: Measure of the instrumental quality of the track
-- `liveness`: Presence of a live audience in the track
-- `valence`: Measure of the musical positiveness of the track
-- `tempo`: Tempo of the track
-- `time_signature`: Time signature of the track
+- `id`: Unique identifier for the track.
+- `name`: Name of the track.
+- `popularity`: Popularity score of the track.
+- `duration_ms`: Duration of the track in milliseconds.
+- `explicit`: Indicates if the track contains explicit content.
+- `artists`: List of artists for the track.
+- `id_artists`: Unique identifiers for the artists.
+- `release_date`: Release date of the track.
+- `danceability`: Measure of how suitable a track is for dancing.
+- `energy`: Measure of intensity and activity.
+- `key`: Key in which the track is composed.
+- `loudness`: Overall loudness of the track.
+- `mode`: Modality of the track (major or minor).
+- `speechiness`: Presence of spoken words in the track.
+- `acousticness`: Measure of the acoustic quality of the track.
+- `instrumentalness`: Measure of the instrumental quality of the track.
+- `liveness`: Presence of a live audience in the track.
+- `valence`: Measure of the musical positiveness of the track.
+- `tempo`: Tempo of the track.
+- `time_signature`: Time signature of the track.
 
 ## Data Wrangling and Manipulation
 The following techniques were used to clean and manipulate the dataset:
@@ -39,25 +39,29 @@ The following techniques were used to clean and manipulate the dataset:
 - **Feature Extraction**: Extracted the year from the `release_date` to analyze trends over time.
 
 ## Analysis Highlights
-- **Data Cleaning**: Identified and removed rows with missing values in critical columns like `name`.
-- **Popularity Analysis**:
-  - Analyzed the top 5 genres by popularity using bar plots.
-  - Visualized average popularity by genre to identify the most popular genres over time.
-  - Examined trends in track popularity over the years.
-- **Audio Features Exploration**:
-  - Investigated the relationship between various audio features and track popularity.
-  - Created scatter plots, bar charts, and heatmaps to visualize correlations and patterns.
+### Data Cleaning
+- Identified and removed rows with missing values in critical columns like `name`.
+
+### Popularity Analysis
+- Analyzed the top 5 genres by popularity using bar plots.
+- Visualized average popularity by genre to identify the most popular genres over time.
+- Examined trends in track popularity over the years.
+
+### Audio Features Exploration
+- Investigated the relationship between various audio features and track popularity.
+- Created scatter plots, bar charts, and heatmaps to visualize correlations and patterns.
 
 ## Visualization and Tools
-- **Libraries Used**:
-  - `pandas`: For data manipulation and analysis
-  - `numpy`: For numerical operations
-  - `matplotlib`: For plotting and visualization
-  - `seaborn`: For advanced visualizations
-- **Visualization Techniques**:
-  - Bar plots to show top genres and average popularity.
-  - Line plots to visualize trends over time.
-  - Scatter plots and heatmaps to explore correlations between audio features and popularity.
+### Libraries Used
+- `pandas`: For data manipulation and analysis.
+- `numpy`: For numerical operations.
+- `matplotlib`: For plotting and visualization.
+- `seaborn`: For advanced visualizations.
+
+### Visualization Techniques
+- **Bar plots**: To show top genres and average popularity.
+- **Line plots**: To visualize trends over time.
+- **Scatter plots and heatmaps**: To explore correlations between audio features and popularity.
 
 ## Conclusion
 This project provides valuable insights into the music industry by analyzing track popularity, genre distribution, and audio features. The findings can help music producers, artists, and enthusiasts understand trends and factors contributing to a track's success.
@@ -80,4 +84,3 @@ This project provides valuable insights into the music industry by analyzing tra
 - **Average Popularity by Genre**
 - **Number of Songs per Year**
 - **Duration of Songs across Different Genres**
-
