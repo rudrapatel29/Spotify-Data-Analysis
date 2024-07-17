@@ -69,14 +69,15 @@ This project provides valuable insights into the music industry by analyzing tra
 - **Results**: Visualizations and findings from the analysis.
 
 ## Findings and Visualizations
-- Top 5 Records By Popularity
-- Number of Tracks that have popularity greater than a certain threshold
-- Top 10 most popular tracks with popularity
-- Top 10 least popular tracks
-- Relationship between Loudness and Energy
-- Relationship between Popularity and Acoustics
-- Correlation Between Variables
-- Duration of Songs over the Years
-- Average Popularity by Genre
-- Number of Songs per Year
-- Duration of Songs across Different Genres
+- **Top 5 Records By Popularity**
+- **Number of Tracks with Popularity Greater Than a Certain Threshold**
+- **Top 10 Most Popular Tracks**
+- **Top 10 Least Popular Tracks**
+- **Relationship between Loudness and Energy**
+- **Relationship between Popularity and Acoustics**
+- **Correlation Between Variables**
+- **Duration of Songs over the Years**
+- **Average Popularity by Genre**
+- **Number of Songs per Year**
+- **Duration of Songs across Different Genres**
+
