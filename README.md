@@ -1,4 +1,4 @@
-# Spotify Music Tracks Data Analysis
+# Spotify Data Analysis
 
 ## Overview
 This project aims to analyze a dataset of Spotify music tracks to uncover trends, patterns, and insights related to track popularity, genre distribution, and various musical attributes. The analysis involves data cleaning, exploration, visualization, and statistical analysis to provide comprehensive insights into the music industry.
