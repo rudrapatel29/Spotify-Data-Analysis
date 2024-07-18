@@ -81,8 +81,6 @@ Here are the unique columns in each dataset:
 - `id_artists`
 - `release_date`
 
-The **Spotify Features** dataset provides additional metadata such as `genre`, `artist_name`, and `track_name`, which are crucial for exploring relationships between audio features and track popularity across different genres and artists. The **Tracks** dataset offers unique identifiers for tracks and artists, explicit content information, and precise release dates, enabling trend analysis over time and a deeper dive into the popularity and characteristics of individual tracks and artists. By combining these datasets, we achieve a more detailed and comprehensive analysis.
-
 ## Data Wrangling and Manipulation
 The following techniques were used to clean and manipulate the dataset:
 - **Handling Missing Values**: Identified and removed rows with missing values in critical columns like `name`.
