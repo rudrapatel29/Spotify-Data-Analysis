@@ -8,28 +8,18 @@ This project aims to analyze a dataset of Spotify music tracks to uncover trends
 - **Genre Analysis**: Determine the most popular genres and analyze their characteristics.
 - **Audio Features Exploration**: Examine various audio features like danceability, energy, loudness, and more to understand their impact on track popularity.
 
-## Dataset
-The dataset used in this project includes the following columns:
-- `id`: Unique identifier for the track.
-- `name`: Name of the track.
-- `popularity`: Popularity score of the track.
-- `duration_ms`: Duration of the track in milliseconds.
-- `explicit`: Indicates if the track contains explicit content.
-- `artists`: List of artists for the track.
-- `id_artists`: Unique identifiers for the artists.
-- `release_date`: Release date of the track.
-- `danceability`: Measure of how suitable a track is for dancing.
-- `energy`: Measure of intensity and activity.
-- `key`: Key in which the track is composed.
-- `loudness`: Overall loudness of the track.
-- `mode`: Modality of the track (major or minor).
-- `speechiness`: Presence of spoken words in the track.
-- `acousticness`: Measure of the acoustic quality of the track.
-- `instrumentalness`: Measure of the instrumental quality of the track.
-- `liveness`: Presence of a live audience in the track.
-- `valence`: Measure of the musical positiveness of the track.
-- `tempo`: Tempo of the track.
-- `time_signature`: Time signature of the track.
+## Datasets
+This project uses two datasets:
+
+1. **Spotify Features**
+    - **Columns**: genre, artist_name, track_name, track_id, popularity, acousticness, danceability, duration_ms, energy, instrumentalness, key, liveness, loudness, mode, speechiness, tempo, time_signature, valence
+    - **Purpose**: Provides detailed audio features and metadata for tracks, which are essential for exploring correlations between audio features and track popularity.
+
+2. **Tracks**
+    - **Columns**: id, name, popularity, duration_ms, explicit, artists, id_artists, release_date, danceability, energy, key, loudness, mode, speechiness, acousticness, instrumentalness, liveness, valence, tempo, time_signature
+    - **Purpose**: Offers comprehensive data on track popularity, artists, and release dates, which are crucial for analyzing trends over time and across genres.
+
+The **Spotify Features** dataset was used primarily because it shares many common columns with the **Tracks** dataset, allowing for a more in-depth analysis of audio features while still leveraging the detailed information on track popularity and artist data from the **Tracks** dataset.
 
 ## Data Wrangling and Manipulation
 The following techniques were used to clean and manipulate the dataset:
@@ -62,6 +52,15 @@ The following techniques were used to clean and manipulate the dataset:
 - **Bar plots**: To show top genres and average popularity.
 - **Line plots**: To visualize trends over time.
 - **Scatter plots and heatmaps**: To explore correlations between audio features and popularity.
+
+## PowerBI Dashboard
+The PowerBI dashboard includes the following visualizations:
+- **Artists with Most Album Releases**: Bar chart of the top 13 artists with the most album releases.
+- **Popularity by Genre**: Pie chart depicting the distribution of music popularity across various genres.
+- **Average Popularity by Speechiness**: Scatter plot showing the relationship between speechiness and average popularity.
+- **Top 10 Artists with Most Explicit Songs**: Bar chart of the top 10 artists with the most explicit songs.
+- **Average Duration of Songs over a Century**: Line graph showing the trend in average song duration over time.
+- **Artists**: List of various artists.
 
 ## Conclusion
 This project provides valuable insights into the music industry by analyzing track popularity, genre distribution, and audio features. The findings can help music producers, artists, and enthusiasts understand trends and factors contributing to a track's success.
