@@ -66,9 +66,22 @@ This project uses two datasets:
 | tempo           | Tempo of the track                      | FLOAT         |
 | time_signature  | Time signature of the track             | INT           |
 
-### Purpose of Using Two Datasets
+Here are the unique columns in each dataset:
 
-The **Spotify Features** dataset was used primarily because it shares many common columns with the **Tracks** dataset, allowing for a more in-depth analysis of audio features while still leveraging the detailed information on track popularity and artist data from the **Tracks** dataset. This combination ensures a comprehensive analysis of both audio features and track popularity.
+### Spotify Features
+- `genre`
+- `artist_name`
+- `track_name`
+- `track_id`
+
+### Tracks
+- `id`
+- `explicit`
+- `artists`
+- `id_artists`
+- `release_date`
+
+The **Spotify Features** dataset provides additional metadata such as `genre`, `artist_name`, and `track_name`, which are crucial for exploring relationships between audio features and track popularity across different genres and artists. The **Tracks** dataset offers unique identifiers for tracks and artists, explicit content information, and precise release dates, enabling trend analysis over time and a deeper dive into the popularity and characteristics of individual tracks and artists. By combining these datasets, we achieve a more detailed and comprehensive analysis.
 
 ## Data Wrangling and Manipulation
 The following techniques were used to clean and manipulate the dataset:
