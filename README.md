@@ -8,18 +8,67 @@ This project aims to analyze a dataset of Spotify music tracks to uncover trends
 - **Genre Analysis**: Determine the most popular genres and analyze their characteristics.
 - **Audio Features Exploration**: Examine various audio features like danceability, energy, loudness, and more to understand their impact on track popularity.
 
-## Datasets
+### Datasets
+
 This project uses two datasets:
 
 1. **Spotify Features**
-    - **Columns**: genre, artist_name, track_name, track_id, popularity, acousticness, danceability, duration_ms, energy, instrumentalness, key, liveness, loudness, mode, speechiness, tempo, time_signature, valence
-    - **Purpose**: Provides detailed audio features and metadata for tracks, which are essential for exploring correlations between audio features and track popularity.
-
+   - Purpose: Provides detailed audio features and metadata for tracks, which are essential for exploring correlations between audio features and track popularity.
+   
 2. **Tracks**
-    - **Columns**: id, name, popularity, duration_ms, explicit, artists, id_artists, release_date, danceability, energy, key, loudness, mode, speechiness, acousticness, instrumentalness, liveness, valence, tempo, time_signature
-    - **Purpose**: Offers comprehensive data on track popularity, artists, and release dates, which are crucial for analyzing trends over time and across genres.
+   - Purpose: Offers comprehensive data on track popularity, artists, and release dates, which are crucial for analyzing trends over time and across genres.
 
-The **Spotify Features** dataset was used primarily because it shares many common columns with the **Tracks** dataset, allowing for a more in-depth analysis of audio features while still leveraging the detailed information on track popularity and artist data from the **Tracks** dataset.
+### Spotify Features
+
+| Column          | Description                             | Data Type     |
+| :-------------- | :-------------------------------------- | :------------ |
+| genre           | Genre of the track                      | VARCHAR       |
+| artist_name     | Name of the artist                      | VARCHAR       |
+| track_name      | Name of the track                       | VARCHAR       |
+| track_id        | Unique identifier for the track         | VARCHAR       |
+| popularity      | Popularity score of the track           | INT           |
+| acousticness    | Measure of the acoustic quality         | FLOAT         |
+| danceability    | Measure of how suitable a track is for dancing | FLOAT    |
+| duration_ms     | Duration of the track in milliseconds   | INT           |
+| energy          | Measure of intensity and activity       | FLOAT         |
+| instrumentalness| Measure of the instrumental quality     | FLOAT         |
+| key             | Key in which the track is composed      | INT           |
+| liveness        | Presence of a live audience             | FLOAT         |
+| loudness        | Overall loudness of the track           | FLOAT         |
+| mode            | Modality of the track (major or minor)  | INT           |
+| speechiness     | Presence of spoken words                | FLOAT         |
+| tempo           | Tempo of the track                      | FLOAT         |
+| time_signature  | Time signature of the track             | INT           |
+| valence         | Measure of the musical positiveness     | FLOAT         |
+
+### Tracks
+
+| Column          | Description                             | Data Type     |
+| :-------------- | :-------------------------------------- | :------------ |
+| id              | Unique identifier for the track         | VARCHAR       |
+| name            | Name of the track                       | VARCHAR       |
+| popularity      | Popularity score of the track           | INT           |
+| duration_ms     | Duration of the track in milliseconds   | INT           |
+| explicit        | Indicates if the track contains explicit content | BOOLEAN   |
+| artists         | List of artists for the track           | VARCHAR       |
+| id_artists      | Unique identifiers for the artists      | VARCHAR       |
+| release_date    | Release date of the track               | DATE          |
+| danceability    | Measure of how suitable a track is for dancing | FLOAT    |
+| energy          | Measure of intensity and activity       | FLOAT         |
+| key             | Key in which the track is composed      | INT           |
+| loudness        | Overall loudness of the track           | FLOAT         |
+| mode            | Modality of the track (major or minor)  | INT           |
+| speechiness     | Presence of spoken words                | FLOAT         |
+| acousticness    | Measure of the acoustic quality         | FLOAT         |
+| instrumentalness| Measure of the instrumental quality     | FLOAT         |
+| liveness        | Presence of a live audience             | FLOAT         |
+| valence         | Measure of the musical positiveness     | FLOAT         |
+| tempo           | Tempo of the track                      | FLOAT         |
+| time_signature  | Time signature of the track             | INT           |
+
+### Purpose of Using Two Datasets
+
+The **Spotify Features** dataset was used primarily because it shares many common columns with the **Tracks** dataset, allowing for a more in-depth analysis of audio features while still leveraging the detailed information on track popularity and artist data from the **Tracks** dataset. This combination ensures a comprehensive analysis of both audio features and track popularity.
 
 ## Data Wrangling and Manipulation
 The following techniques were used to clean and manipulate the dataset:
