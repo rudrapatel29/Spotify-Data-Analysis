@@ -66,7 +66,7 @@ This project uses two datasets:
 | tempo           | Tempo of the track                      | FLOAT         |
 | time_signature  | Time signature of the track             | INT           |
 
-Here are the unique columns in each dataset:
+## Unique columns in each dataset:
 
 ### Spotify Features
 - `genre`
